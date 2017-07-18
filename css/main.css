@@ -107,7 +107,8 @@ header a:hover {
     text-indent: 50px;
 }
 
-.ContentBottom form input, .ContentBottom form select {
+.ContentBottom form input,
+.ContentBottom form select {
     width: 46%;
     margin: 2%;
     min-width: 200px;
@@ -178,5 +179,10 @@ footer a {
         text-align: center;
         width: 100%;
         float: none;
+    }
+    .ContentBottom form input,
+    .ContentBottom form select {
+        float: none;
+        margin: auto;
     }
 }
