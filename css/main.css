@@ -157,6 +157,7 @@ footer {
 }
 
 footer p {
+    margin-left: 20px;
     color: darkgreen;
     float: left;
 }
@@ -164,6 +165,7 @@ footer p {
 footer a {
     color: darkgreen;
     float: right;
+    margin-right: 20px;
 }
 
 
