@@ -1,7 +1,18 @@
 body {
     margin: 0 auto;
     padding: 0;
-    background-color: antiquewhite;
+}
+
+
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    color: white;
+}
+
+h1 {
+    font-size: 26px;
 }
 
 header {
@@ -24,7 +35,7 @@ header a {
     padding: 22px;
     float: right;
     font-size: 20px;
-    color: white;
+    color: inherit;
     text-decoration: underline white;
 }
 
@@ -32,39 +43,33 @@ header a:hover {
     text-decoration: underline orange;
 }
 
-.container {
-    margin: 0 auto;
-    max-width: 1000px;
-    color: white;
-}
-
-#ContentTop {
+.ContentTop {
     background-color: #ef5350;
     min-height: 400px;
     width: 100%;
     float: left;
 }
 
-#ContentTopLeft {
+.ContentTopLeft {
     width: 50%;
     height: 400px;
     float: left;
     text-align: left;
 }
 
-#ContentTopLeft img {
+.ContentTopLeft img {
     margin-top: 50px;
     max-width: 90%;
 }
 
-#ContentTopRight {
+.ContentTopRight {
     width: 50%;
     float: left;
     color: inherit;
     text-align: justify;
 }
 
-#ContentTopRight input {
+.ContentTopRight input {
     background-color: #04e4a2;
     border: 2px outset #e94643;
     border-radius: 5px;
@@ -75,11 +80,11 @@ header a:hover {
     margin: 10px;
 }
 
-#ContentTopRight input:hover {
+.ContentTopRight input:hover {
     border: 2px inset #e94643;
 }
 
-#ContentTopRightText {
+.ContentTopRightText {
     margin-top: 100px;
     font-size: 18px;
     padding: 10px;
@@ -103,33 +108,75 @@ header a:hover {
 }
 
 .ContentBottom form input, .ContentBottom form select {
-    width: 40%;
-    height: 30px;
-    margin: 5px;
+    width: 46%;
+    margin: 2%;
+    min-width: 200px;
+    height: 40px;
     border:solid 1px lightblue;
-    text-indent: 20px;
-}
-
-.ContentBottom form textarea {
-    width: 82%;
-    height: 200px;
-}
-
-#send {
-    float: right;
-    right: 50px;
-    font-size: 26px;
-    background-color: #e94643;
-    widows:50px;
-}
-
-footer {
-    background-color: #fefcf2;
-    height: 50px;
-    width: 100%;
+    border-radius: 5px;
+    background-color: white;
+    box-sizing: border-box;
     float: left;
 }
 
-h1 {
-    font-size: 26px;
+.ContentBottom form textarea {
+    width: 96%;
+    margin: 2%;
+    min-width: 200px;
+    height: 200px;
+    border:solid 1px lightblue;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.ContentBottom .send {
+    min-width: 100px;
+    width: 100px;
+    height: 40px;
+    float: right;
+    margin-right: 4%;
+    background-color: #e94643;
+    border-radius: 5px;
+    border: 2px outset #e94643;
+    border:;
+    text-align: center;
+    font-size: 20px;
+    color: inherit;
+}
+
+.ContentBottom .send:hover {
+    border: 2px inset #e94643;
+}
+
+footer {
+    float: left;
+    height: 50px;
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+footer p {
+    color: darkgreen;
+    float: left;
+}
+
+footer a {
+    color: darkgreen;
+    float: right;
+}
+
+
+@media screen and (max-width: 480px) {
+    .ContentTopRight {
+        width: 100%;
+    }
+    .ContentTopLeft {
+        width: 100%;
+        height: 100%;
+    }
+    .ContentBottom form {
+        text-align: center;
+        width: 100%;
+        float: none;
+    }
 }
