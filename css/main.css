@@ -1,0 +1,135 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    background-color: antiquewhite;
+}
+
+header {
+    border-top:20px solid #04e4a2;
+    background-color: #e94643;
+    height: 70px;
+    width: 100%;
+    float: left;
+}
+
+header p {
+    margin: 0;
+    padding: 22px;
+    float: left;
+    font-size: 26px;
+}
+
+header a {
+    display: inline;
+    padding: 22px;
+    float: right;
+    font-size: 20px;
+    color: white;
+    text-decoration: underline white;
+}
+
+header a:hover {
+    text-decoration: underline orange;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    color: white;
+}
+
+#ContentTop {
+    background-color: #ef5350;
+    min-height: 400px;
+    width: 100%;
+    float: left;
+}
+
+#ContentTopLeft {
+    width: 50%;
+    height: 400px;
+    float: left;
+    text-align: left;
+}
+
+#ContentTopLeft img {
+    margin-top: 50px;
+    max-width: 90%;
+}
+
+#ContentTopRight {
+    width: 50%;
+    float: left;
+    color: inherit;
+    text-align: justify;
+}
+
+#ContentTopRight input {
+    background-color: #04e4a2;
+    border: 2px outset #e94643;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: inherit;
+    font-size: 18px;
+    float: right;
+    margin: 10px;
+}
+
+#ContentTopRight input:hover {
+    border: 2px inset #e94643;
+}
+
+#ContentTopRightText {
+    margin-top: 100px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.ContentBottom {
+    float: left;
+    width: 100%;
+}
+
+.ContentBottom form {
+    text-align: center;
+    float: right;
+    width: 50%;
+}
+
+.ContentBottom form p {
+    color: #ef5350;
+    text-align: left;
+    text-indent: 50px;
+}
+
+.ContentBottom form input, .ContentBottom form select {
+    width: 40%;
+    height: 30px;
+    margin: 5px;
+    border:solid 1px lightblue;
+    text-indent: 20px;
+}
+
+.ContentBottom form textarea {
+    width: 82%;
+    height: 200px;
+}
+
+#send {
+    float: right;
+    right: 50px;
+    font-size: 26px;
+    background-color: #e94643;
+    widows:50px;
+}
+
+footer {
+    background-color: #fefcf2;
+    height: 50px;
+    width: 100%;
+    float: left;
+}
+
+h1 {
+    font-size: 26px;
+}
